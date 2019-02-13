@@ -171,21 +171,49 @@ nav a {
   display: flex;
   justify-content: center;
   margin: 2.5% 0;
-  color: black;
+  color: #181c16;
   font-size: 1.5rem;
   transition: all 0.3s ease-in;
 }
 nav a:hover {
-  color: red;
+  color: #cf0015;
+}
+.container {
+  background-color: #c5a173;
 }
 .header-contents h1 {
   display: flex;
   font-size: 3.8rem;
   justify-content: center;
 }
-.banner {
+.intro .banner {
   padding-top: 2.5%;
   display: flex;
   height: 200px;
   width: 100%;
+}
+.intro h2 {
+  display: flex;
+  padding-top: 5%;
+  justify-content: center;
+}
+.programs .programs-image {
+  display: flex;
+  padding-top: 5%;
+  align-items: center;
+}
+.programs h3 {
+  display: flex;
+  padding-top: 5%;
+  justify-content: center;
+}
+.get-involved h3 {
+  display: flex;
+  padding-top: 5%;
+  justify-content: center;
+}
+.donate h3 {
+  display: flex;
+  padding-top: 5%;
+  justify-content: center;
 }
