@@ -1,0 +1,27 @@
+// Mixins Here
+
+.custom-btn(@width: 200px, @height: 40px, @bgcolor:  #23293B, @font-color: white) {
+    width: @width;
+    height: @height;
+    background-color: @font-color;
+    color: @bgcolor;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    
+}
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .transition (@prop: all, @time: 1s, @ease: linear) {
+    transition: @prop @time @ease;
+
+  }
+
+  .border-radius (@radius: 10px) {
+    border-radius: @radius;
+  }
