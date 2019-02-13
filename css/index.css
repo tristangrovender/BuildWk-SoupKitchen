@@ -161,13 +161,22 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+header {
+  background-color: #edeae6;
+  padding-bottom: 2.5%;
+}
+header h1 {
+  display: flex;
+  font-size: 3.6rem;
+  justify-content: center;
+}
+header nav {
   display: flex;
   padding-top: 2.5%;
   width: 100%;
   flex-direction: column;
 }
-nav a {
+header nav a {
   display: flex;
   justify-content: center;
   margin: 2.5% 0;
@@ -175,45 +184,62 @@ nav a {
   font-size: 1.5rem;
   transition: all 0.3s ease-in;
 }
-nav a:hover {
+header nav a:hover {
   color: #cf0015;
 }
 .container {
   background-color: #c5a173;
 }
-.header-contents h1 {
+.container .header-contents h1 {
   display: flex;
   font-size: 3.8rem;
   justify-content: center;
 }
-.intro .banner {
-  padding-top: 2.5%;
+.container .intro .banner {
   display: flex;
   height: 200px;
   width: 100%;
 }
-.intro h2 {
+.container .intro h2 {
   display: flex;
   padding-top: 5%;
   justify-content: center;
 }
-.programs .programs-image {
+.container .programs {
   display: flex;
-  padding-top: 5%;
+  flex-direction: column;
   align-items: center;
 }
-.programs h3 {
+.container .programs .programs-image {
   display: flex;
   padding-top: 5%;
   justify-content: center;
 }
-.get-involved h3 {
+.container .programs h3 {
   display: flex;
   padding-top: 5%;
   justify-content: center;
 }
-.donate h3 {
+.container .get-involved {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .get-involved h3 {
   display: flex;
   padding-top: 5%;
   justify-content: center;
+}
+.container .donate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .donate h3 {
+  display: flex;
+  padding-top: 5%;
+  justify-content: center;
+}
+footer {
+  background-color: #edeae6;
 }
