@@ -167,7 +167,7 @@ header {
 }
 header h1 {
   display: flex;
-  font-size: 3.6rem;
+  font-size: 4rem;
   justify-content: center;
 }
 header nav {
@@ -192,7 +192,6 @@ header nav a:hover {
 }
 .container .header-contents h1 {
   display: flex;
-  font-size: 3.8rem;
   justify-content: center;
 }
 .container .intro .banner {
@@ -204,6 +203,9 @@ header nav a:hover {
   display: flex;
   padding-top: 5%;
   justify-content: center;
+}
+.container .intro p {
+  margin: 0 5%;
 }
 .container .programs {
   display: flex;
@@ -220,6 +222,9 @@ header nav a:hover {
   padding-top: 5%;
   justify-content: center;
 }
+.container .programs p {
+  margin: 0 5%;
+}
 .container .get-involved {
   display: flex;
   flex-direction: column;
@@ -229,6 +234,9 @@ header nav a:hover {
   display: flex;
   padding-top: 5%;
   justify-content: center;
+}
+.container .get-involved p {
+  margin: 0 5%;
 }
 .container .donate {
   display: flex;
@@ -240,6 +248,16 @@ header nav a:hover {
   padding-top: 5%;
   justify-content: center;
 }
+.container .donate p {
+  margin: 0 5%;
+}
 footer {
   background-color: #edeae6;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  footer {
+    border: 5px solid purple;
+  }
 }
