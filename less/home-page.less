@@ -15,6 +15,10 @@
             display: flex;
             height: 200px;
             width: 100%;
+
+            @media @desktop {
+                height: 300px;
+            }
         }
 
         h2 {
@@ -28,10 +32,21 @@
         }
     }
 
+    .middle-content {
+        @media @desktop {
+            display: flex;
+            margin: 0 5%;
+        }
+    }
+
     .programs {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media @desktop {
+            width: 33%;
+        }
     
         .programs-image {
             display: flex;
@@ -54,6 +69,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media @desktop {
+            width: 33%;
+        }
     
         h3 {
             display: flex;
@@ -64,12 +83,23 @@
         p {
             margin: 0 5%;    
             }
+        .get-involved-image {
+            @media @desktop {
+                padding-top: 5%;
+              }  
+
+        }    
+         
     }
 
     .donate {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media @desktop {
+            width: 33%;
+        }
 
         h3 {
             display: flex;

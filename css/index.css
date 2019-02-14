@@ -169,14 +169,14 @@ header {
   header {
     display: flex;
     justify-content: center;
-    border-bottom: 5px solid #cf0015;
+    border-bottom: 3px solid #cf0015;
     padding-bottom: 0;
   }
 }
 @media (min-width: 500px) {
   header .header-contents {
     display: flex;
-    border: 3px solid green;
+    width: 800px;
   }
 }
 header .header-contents h1 {
@@ -186,7 +186,7 @@ header .header-contents h1 {
 }
 @media (min-width: 500px) {
   header .header-contents h1 {
-    border: 3px solid black;
+    margin: 0 0 0 3%;
   }
 }
 header .header-contents nav {
@@ -198,7 +198,6 @@ header .header-contents nav {
 @media (min-width: 500px) {
   header .header-contents nav {
     flex-direction: row;
-    border: 3px solid purple;
   }
 }
 header .header-contents nav a {
@@ -206,11 +205,17 @@ header .header-contents nav a {
   justify-content: center;
   margin: 2.5% 0;
   color: #181c16;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   transition: all 0.3s ease-in;
 }
 header .header-contents nav a:hover {
   color: #cf0015;
+}
+@media (min-width: 500px) {
+  header .header-contents nav a {
+    margin: 0 0 1% 9%;
+    align-items: flex-end;
+  }
 }
 .container {
   background-color: #c5a173;
@@ -224,6 +229,11 @@ header .header-contents nav a:hover {
   height: 200px;
   width: 100%;
 }
+@media (min-width: 500px) {
+  .container .intro .banner {
+    height: 300px;
+  }
+}
 .container .intro h2 {
   display: flex;
   padding-top: 5%;
@@ -232,10 +242,21 @@ header .header-contents nav a:hover {
 .container .intro p {
   margin: 0 5%;
 }
+@media (min-width: 500px) {
+  .container .middle-content {
+    display: flex;
+    margin: 0 5%;
+  }
+}
 .container .programs {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 500px) {
+  .container .programs {
+    width: 33%;
+  }
 }
 .container .programs .programs-image {
   display: flex;
@@ -255,6 +276,11 @@ header .header-contents nav a:hover {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 500px) {
+  .container .get-involved {
+    width: 33%;
+  }
+}
 .container .get-involved h3 {
   display: flex;
   padding-top: 5%;
@@ -263,10 +289,20 @@ header .header-contents nav a:hover {
 .container .get-involved p {
   margin: 0 5%;
 }
+@media (min-width: 500px) {
+  .container .get-involved .get-involved-image {
+    padding-top: 5%;
+  }
+}
 .container .donate {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 500px) {
+  .container .donate {
+    width: 33%;
+  }
 }
 .container .donate h3 {
   display: flex;
@@ -283,6 +319,6 @@ footer {
 }
 @media (min-width: 500px) {
   footer {
-    border: 5px solid purple;
+    border-top: 3px solid #cf0015;
   }
 }

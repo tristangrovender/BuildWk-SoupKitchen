@@ -6,14 +6,14 @@ header {
     @media @desktop {
         display: flex;
         justify-content: center;
-        border-bottom: 5px solid @brand-red;
+        border-bottom: 3px solid @brand-red;
         padding-bottom: 0;
     }
 
     .header-contents {
         @media @desktop {
            display: flex;
-           border: 3px solid green;
+           width:800px;
 
         }
 
@@ -24,7 +24,7 @@ header {
             justify-content: center;
 
             @media @desktop {
-                border: 3px solid black;
+               margin: 0 0 0 3%;
             }
         }
 
@@ -36,7 +36,8 @@ header {
 
             @media @desktop {
                 flex-direction: row;
-                border: 3px solid purple;
+                
+                
             }
 
             a {
@@ -44,11 +45,16 @@ header {
                 justify-content: center;
                 margin: 2.5% 0;
                 color: @brand-black;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 transition: all 0.3s ease-in;
 
                 &:hover {
                     color: @brand-red;
+                }
+
+                @media @desktop {
+                    margin: 0 0 1% 9%; 
+                    align-items: flex-end;
                 }
 
             }
