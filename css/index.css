@@ -165,18 +165,43 @@ header {
   background-color: #edeae6;
   padding-bottom: 2.5%;
 }
-header h1 {
+@media (min-width: 500px) {
+  header {
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid #cf0015;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 500px) {
+  header .header-contents {
+    display: flex;
+    border: 3px solid green;
+  }
+}
+header .header-contents h1 {
   display: flex;
   font-size: 4rem;
   justify-content: center;
 }
-header nav {
+@media (min-width: 500px) {
+  header .header-contents h1 {
+    border: 3px solid black;
+  }
+}
+header .header-contents nav {
   display: flex;
   padding-top: 2.5%;
   width: 100%;
   flex-direction: column;
 }
-header nav a {
+@media (min-width: 500px) {
+  header .header-contents nav {
+    flex-direction: row;
+    border: 3px solid purple;
+  }
+}
+header .header-contents nav a {
   display: flex;
   justify-content: center;
   margin: 2.5% 0;
@@ -184,7 +209,7 @@ header nav a {
   font-size: 1.5rem;
   transition: all 0.3s ease-in;
 }
-header nav a:hover {
+header .header-contents nav a:hover {
   color: #cf0015;
 }
 .container {
