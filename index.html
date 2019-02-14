@@ -10,6 +10,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <script src="index.js" async></script>
 
   <!-- ***NEED TO FIX FAVICON LINK*** -->
 
@@ -40,7 +41,21 @@
 
     <div class="intro">
 
-      <img class="banner" src="img/banner.jpg" alt="Pots of soup">
+      <!-- <img class="banner" src="img/banner.jpg" alt="Pots of soup"> -->
+
+      <!-- Carousel  -->
+      <div id="carousel" class="carousel">
+          <div class="slides">
+            <div class="slide" data-state="active"><img class="banner" src="img/banner.jpg" alt="Pots of soup"></div>
+            <div class="slide"><img class="banner" src="img/homeless1.jpg" alt="Homeless man in suit"></div>
+            <div class="slide"><img class="banner" src="img/homeless2.jpg" alt="old man laughing"></div>
+          </div>
+          <div class="indicators">
+            <input class="indicator" name="indicator" data-slide="1" data-state="active" checked type="radio" />
+            <input class="indicator" name="indicator" data-slide="2" type="radio" />
+            <input class="indicator" name="indicator" data-slide="3" type="radio" />
+          </div>
+        </div>
 
       <h2>Our Mission</h2>
 
@@ -85,10 +100,10 @@
 
         <h3>Donate</h3>
 
-        <p>We rely on private donations of food and money to meet the needs of our guests. Donate <btn>online</btn>,
+        <p>We rely on private donations of food and money to meet the needs of our guests. Donate <a href="#">online</a>,
           through
 
-          <btn>Pick.Click.Give</btn>, or send donations to our <btn>mailing address</btn>.
+          <a href="#">Pick.Click.Give</a>, or send donations to our <a href="#">mailing address</a>.
         </p>
       </section>
     </div>
