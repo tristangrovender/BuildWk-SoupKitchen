@@ -2,10 +2,9 @@
     background-color: @brand-tan;
 
     .header-contents {
-
         h1 {
             display: flex;
-          
+
             justify-content: center;
         }
     }
@@ -16,19 +15,19 @@
             height: 200px;
             width: 100%;
             position: relative;
-           
+
             @media @desktop {
                 height: 350px;
             }
-          }
-          
-          .slides {
+        }
+
+        .slides {
             height: 100%;
             width: 100%;
             position: relative;
-          }
-          
-          .slide {
+        }
+
+        .slide {
             position: absolute;
             top: 0;
             left: 0;
@@ -40,33 +39,33 @@
             text-align: center;
             opacity: 0;
             transition: opacity 1000ms;
-          }
-          
-          .slide:nth-child(1) {
-              opacity: 1;
-          }
-          
+        }
+
+        .slide:nth-child(1) {
+            opacity: 1;
+        }
+
         //   .slide:nth-child(2) {
-              
+
         //   }
-          
+
         //   .slide:nth-child(3) {
-             
+
         //   }
-          
-          .slide[data-state=active] {
+
+        .slide[data-state="active"] {
             display: block;
-          }
-          
-          .indicators {
+        }
+
+        .indicators {
             position: absolute;
             bottom: 20px;
             right: 20px;
-          }
-          
-          .indicator {
-              cursor: pointer;
-          }
+        }
+
+        .indicator {
+            cursor: pointer;
+        }
 
         .banner {
             display: flex;
@@ -85,7 +84,7 @@
         }
 
         p {
-        margin: 0 5%;    
+            margin: 0 5%;
         }
     }
 
@@ -104,7 +103,7 @@
         @media @desktop {
             width: 33%;
         }
-    
+
         .programs-image {
             display: flex;
             padding-top: 5%;
@@ -118,8 +117,8 @@
         }
 
         p {
-            margin: 0 5%;    
-            }
+            margin: 0 5%;
+        }
     }
 
     .get-involved {
@@ -130,7 +129,7 @@
         @media @desktop {
             width: 33%;
         }
-    
+
         h3 {
             display: flex;
             padding-top: 5%;
@@ -138,15 +137,13 @@
         }
 
         p {
-            margin: 0 5%;    
-            }
+            margin: 0 5%;
+        }
         .get-involved-image {
             @media @desktop {
                 padding-top: 5%;
-              }  
-
-        }    
-         
+            }
+        }
     }
 
     .donate {
@@ -165,7 +162,11 @@
         }
 
         p {
-            margin: 0 5%;    
+            margin: 0 5%;
+
+            a {
+                text-decoration: none;
             }
+        }
     }
 }
