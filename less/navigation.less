@@ -1,4 +1,4 @@
-// Navigation/header 
+// Navigation/header
 header {
     background-color: @brand-grey;
     padding-bottom: 2.5%;
@@ -12,11 +12,9 @@ header {
 
     .header-contents {
         @media @desktop {
-           display: flex;
-           width:800px;
-
+            display: flex;
+            width: 800px;
         }
-
 
         h1 {
             display: flex;
@@ -24,7 +22,7 @@ header {
             justify-content: center;
 
             @media @desktop {
-               margin: 0 0 0 3%;
+                margin: 0 0 0 3%;
             }
         }
 
@@ -36,8 +34,6 @@ header {
 
             @media @desktop {
                 flex-direction: row;
-                
-                
             }
 
             a {
@@ -47,16 +43,16 @@ header {
                 color: @brand-black;
                 font-size: 1.8rem;
                 transition: all 0.3s ease-in;
+                text-decoration: none;
 
                 &:hover {
                     color: @brand-red;
                 }
 
                 @media @desktop {
-                    margin: 0 0 1% 9%; 
+                    margin: 0 0 1% 9%;
                     align-items: flex-end;
                 }
-
             }
         }
     }

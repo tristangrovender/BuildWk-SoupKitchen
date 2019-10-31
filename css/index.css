@@ -207,6 +207,7 @@ header .header-contents nav a {
   color: #181c16;
   font-size: 1.8rem;
   transition: all 0.3s ease-in;
+  text-decoration: none;
 }
 header .header-contents nav a:hover {
   color: #cf0015;
@@ -256,7 +257,7 @@ header .header-contents nav a:hover {
 .container .intro .slide:nth-child(1) {
   opacity: 1;
 }
-.container .intro .slide[data-state=active] {
+.container .intro .slide[data-state="active"] {
   display: block;
 }
 .container .intro .indicators {
@@ -354,6 +355,9 @@ header .header-contents nav a:hover {
 }
 .container .donate p {
   margin: 0 5%;
+}
+.container .donate p a {
+  text-decoration: none;
 }
 footer {
   background-color: #edeae6;
