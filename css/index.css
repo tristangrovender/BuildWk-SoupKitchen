@@ -169,7 +169,7 @@ header {
   header {
     display: flex;
     justify-content: center;
-    border-bottom: 3px solid #cf0015;
+    border-bottom: 2px solid #cf0015;
     padding-bottom: 0;
   }
 }
@@ -186,7 +186,7 @@ header .header-contents h1 {
 }
 @media (min-width: 500px) {
   header .header-contents h1 {
-    margin: 0 0 0 3%;
+    margin: 0 -7% 0 5%;
   }
 }
 header .header-contents nav {
@@ -366,6 +366,6 @@ footer {
 }
 @media (min-width: 500px) {
   footer {
-    border-top: 3px solid #cf0015;
+    border-top: 2px solid #cf0015;
   }
 }
